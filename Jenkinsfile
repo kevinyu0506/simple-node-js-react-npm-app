@@ -29,7 +29,7 @@ pipeline {
     }
     post {
         success {
-            sh 'node src/notify.js release_notification_test'
+            sh 'node src/notify.js bKrlmD0tBt6NWUD8tsTbCecJhcwm0w9Jujtd85KQlD8 "CMS Smoke Test Passed" $JOB_NAME $BUILD_URL'
         }
     }
 }

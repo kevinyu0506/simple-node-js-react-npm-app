@@ -27,4 +27,9 @@ pipeline {
             }
         }
     }
+    post {
+        success {
+            sh 'node src/notify.js release_notification_test'
+        }
+    }
 }
